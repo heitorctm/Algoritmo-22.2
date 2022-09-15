@@ -2,5 +2,5 @@
 > Status: no meio do semestre.
 
 ```
-Beecrowd
+Exercicios do beecrowd em JavaScript
 ```
