@@ -1,9 +1,8 @@
-//var input = require('fs').readFileSync('/dev/stdin', 'utf8');
-//var lines = input.split('\n');
-//var prompt = function(texto) { return lines.shift();};
- 
-var valor = parseFloat(0.06);
-//var valor = parseFloat(prompt());
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+var prompt = function(texto) { return lines.shift();};
+
+var valor = parseFloat(prompt());
 
 var nota100 = parseInt(valor/100);
 var nota50 = parseInt((valor -nota100*100)/50);
@@ -17,12 +16,11 @@ var moeda50 = parseInt((valor - Math.floor(valor))/0.5);
 var moeda25 = parseInt(((valor - Math.floor(valor)) - moeda50*0.5)/0.25);
 var moeda10 = parseInt((((valor - Math.floor(valor)) - moeda50*0.5 - moeda25*0.25)/0.10));
 var moeda05 = parseInt((((valor - Math.floor(valor)) - moeda50*0.5 - moeda25*0.25 - moeda10*0.10))/0.05);
-var moedaCentavo = parseInt((((valor - Math.floor(valor)) - moeda50*0.5 - moeda25*0.25 - moeda10*0.10 - moeda05*0.05)/0.01));
+var moedaCentavo = parseInt((((valor - Math.floor(valor)) - moeda50*0.5 - moeda25*0.25 - moeda10*0.10 - moeda05*0.05)/0.01).toFixed(0));
 
 //var resto = parseFloat((((valor - Math.floor(valor)) - moeda50*0.5 - moeda25*0.25 - moeda10*0.10))%0.05);
 //var moedaCentavo = Math.round(parseFloat(resto*100));
  
-console.log(moedaCentavo);
 console.log("NOTAS:");
 console.log(nota100 + " nota(s) de R$ 100.00");
 console.log(nota50+ " nota(s) de R$ 50.00");    

@@ -4,10 +4,6 @@ var prompt = function(texto) { return lines.shift();};
  
 var [A, B, C] =  prompt().split(" ");  
 
-/* var A = 10.3;
-var B = 203;
-var C = 5;  */
-
 var delta = Math.pow(B,2) - 4*A*C;
 
 var R1 = (-B + Math.sqrt(delta))/2/A;

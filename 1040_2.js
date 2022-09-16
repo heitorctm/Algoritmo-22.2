@@ -12,7 +12,6 @@ var n4 = parseFloat(n4);
 var n1 = parseFloat(n1);
 var media1 = parseFloat((n2*2+n3*3+n4*4+n1*1)/10);
 
-
 if (media1 >=7){
     console.log("Media: "+media1.toFixed(1));
     console.log("Aluno aprovado.");

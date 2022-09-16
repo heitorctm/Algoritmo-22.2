@@ -4,8 +4,6 @@ var prompt = function(texto) { return lines.shift();};
 
 var ponto = parseFloat(prompt());
 
-//  ([0,25], (25,50], (50,75], (75,100])
-
 if (ponto >=0 && ponto <=100){
     if (ponto >=0 && ponto <=25){
     console.log("Intervalo [0,25]");

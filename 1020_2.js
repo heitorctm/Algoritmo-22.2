@@ -1,8 +1,8 @@
-/* var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
 var lines = input.split('\n');
-var prompt = function(texto) { return lines.shift();}; */
+var prompt = function(texto) { return lines.shift();};
 
-var tempo = parseInt(402);
+var tempo = parseInt(prompt());
 
 var ano = parseInt(tempo/365);
 var restoAno = parseInt(tempo%365);
