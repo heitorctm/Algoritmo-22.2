@@ -9,7 +9,7 @@ var C = +C;
 var Aa = +A;
 var Bb = +B;
 var Cc = +C;
-var auxiliar = 0;
+var auxiliar;
 
 if(B > A && B > C){
     auxiliar = B;

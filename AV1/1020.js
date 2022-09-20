@@ -4,7 +4,7 @@ var prompt = function(texto) { return lines.shift();};
 
 var tempo = parseInt(prompt());
 var ano = parseInt(tempo/365);
-var mes = parseInt(((tempo-ano*365)/30));
+var mes = parseInt(((tempo - ano*365)/30));
 var dia = parseInt(tempo - ano*365 - mes*30);
 
 console.log(ano+" ano(s)");

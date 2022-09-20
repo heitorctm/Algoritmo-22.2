@@ -4,9 +4,6 @@ var prompt = function(texto) { return lines.shift();};
  
 var [X, Y] =  prompt().split(" "); 
 
-/* var X = 0;
-var Y = 1; */
-
 if (X > 0 && Y > 0) {
     console.log('Q1');
 }

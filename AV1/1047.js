@@ -1,13 +1,13 @@
-var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+/* var input = require('fs').readFileSync('/dev/stdin', 'utf8');
 var lines = input.split('\n');
 var prompt = function(texto) { return lines.shift();};
  
-var [horaI, minutoI, horaF, minutoF] =  prompt().split(" ");  
+var [horaI, minutoI, horaF, minutoF] =  prompt().split(" ");   */
 
-horaI = parseInt(horaI);
-minutoI = parseInt(minutoI);
-horaF = parseInt(horaF);
-minutoF = parseInt(minutoF);
+horaI = parseInt(7);
+minutoI = parseInt(10);
+horaF = parseInt(8);
+minutoF = parseInt(9);
 
 var dia = 1440;
 var inicio = horaI*60 + minutoI;
