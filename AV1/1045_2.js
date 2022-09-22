@@ -1,13 +1,13 @@
 var input = require('fs').readFileSync('/dev/stdin', 'utf8');
 var lines = input.split('\n');
-var prompt = function(texto) { return lines.shift();};
+var prompt = function(texto) { return lines.shift();}; 
  
-var [A, B, C] =  prompt().split(" "); 
+var [A, B, C] =  prompt().split(" ");
 
 var A = parseFloat(A);
 var B = parseFloat(B);
 var C = parseFloat(C);
-var auxiliar = 0;
+var auxiliar;
 
 if(B >= A && B >= C){
     auxiliar = B;

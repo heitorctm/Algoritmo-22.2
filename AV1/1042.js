@@ -4,7 +4,7 @@ var prompt = function(texto) { return lines.shift();};
  
 var [A, B, C] =  prompt().split(" ");
 var A = +A;
-var B = +B;
+var B = +B; 
 var C = +C;
 var Aa = +A;
 var Bb = +B;
