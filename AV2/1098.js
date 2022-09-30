@@ -4,7 +4,6 @@ var J = 0;
 
 while(cont <= 10) {
     J = 0;
-    loop = 0;
     while(J<3) {
         J++
         if(I === 1 || I.toFixed(1) == 2 || I === 0){ 
