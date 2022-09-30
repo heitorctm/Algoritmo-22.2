@@ -1,10 +1,12 @@
-var input = require('fs').readFileSync('/dev/stdin', 'utf8');
-var lines = input.split('\n');
-var prompt = function(texto) { return lines.shift();};
+<script>
  
 var A = parseInt(prompt());
 
+var cont = 0;
+
+
 while(cont < A) {
+    cont++;
 
     var [Pa, Pb, G1, G2] = prompt().split(" ");
 
@@ -23,16 +25,12 @@ while(cont < A) {
         crescimentoB = Math.floor(Pb*G2);
         Pa += crescimentoA;
         Pb += crescimentoB;
-        if(anos>100){
-            console.log('Mais de 1 seculo.');
-            break;
-        }
 
     }
-
-    if(anos <=100){
-        console.log(anos + " anos.");
+    if(anos <= 100){
+    document.write(anos + " anos.");
+    } else {
+        document.write("Mais de 1 seculo.");
     }
-
-    cont++;
 }
+</script>
