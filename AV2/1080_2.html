@@ -1,0 +1,16 @@
+﻿<script>
+
+var A=[];
+
+for(i=0;i<5;i++) {
+    A.push(parseFloat(prompt()));
+}
+const valorMin = A.reduce(function(anterior, atual) { 
+    return anterior < atual ? anterior : atual; 
+});
+console.log(valorMin);
+
+console.log(A.indexOf(valorMin,0)+1);
+
+
+</script>
