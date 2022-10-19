@@ -3,4 +3,7 @@
 
 ```
 Exercicios do beecrowd em JavaScript
+Se for copiar, negada. muda o nome das variavéis.
+Qualquer dúvida é só chamar no discord ou whatsapp
+
 ```
